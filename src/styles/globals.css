@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  p {
+    @apply text-rouge-800 dark:text-rouge-200;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-concert-one;
+  }
+
+  h1 {
+    @apply text-header-1;
+  }
+
+  h2 {
+    @apply text-header-2;
+  }
+
+  h3 {
+    @apply text-header-3;
+  }
+
+  p {
+    @apply font-dm-mono;
+  }
+}
