@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       fontSize: {
+        'title': '8rem',
         'header-1': '2.5rem',
         'header-2': '2rem',
         'header-3': '1.5rem',
