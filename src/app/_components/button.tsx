@@ -5,7 +5,7 @@ import React from 'react'
 import { cn } from "~/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center relative justify-center transition-all font-dm-mono rounded-md active:-translate-y-0 hover:-translate-y-2 after:absolute after:h-full after:w-full after:top-1/3 after:-z-50 hover:after:top-1/2 after:transition-all after:rounded-md active:after:-translate-y-2 hover:after:-z-50 before:absolute before:w-full before:h-full before:rounded-md before:-z-10 before:border",
+  "inline-flex items-center relative justify-center transition-all font-dm-mono rounded-md active:translate-y-1.5 hover:-translate-y-2 after:absolute after:h-full after:w-full after:top-1/3 after:-z-50 hover:after:top-1/2 after:transition-all after:rounded-md active:after:-translate-y-[15px] hover:after:-z-50 before:absolute before:w-full before:h-full before:rounded-md before:-z-10 before:border py-2 px-4",
   {
     variants: {
       variant: {
