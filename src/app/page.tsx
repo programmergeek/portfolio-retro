@@ -1,18 +1,25 @@
-import Link from "next/link";
-import { api, HydrateClient } from "~/trpc/server";
+import { HydrateClient } from "~/trpc/server";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./_components/card";
 import { Button } from "./_components/button";
 
 export default async function Home() {
-  const hello = await api.post.hello({ text: "from tRPC" });
-
-  void api.post.getLatest.prefetch();
 
   return (
     <HydrateClient>
-      <main className="p-10 flex gap-1">
-        <Button variant={'primary'} size={'default'} className="">Primary Button</Button>
-        <br />
-        <Button variant={'secondary'} size={'default'} className="z-50 focus:z-20 hover:z-20">Secondary Button</Button>
+      <main className="h-screen w-screen p-3 bg-rouge-100">
+        <Card>
+          <CardHeader>
+            <CardTitle>Workplace 1</CardTitle>
+            <CardDescription>Start Date - End Date</CardDescription>
+          </CardHeader>
+          <CardContent>
+            This is a test
+          </CardContent>
+          <CardFooter className="flex gap-3 justify-end">
+            <Button variant={'primary'}>Button 1</Button>
+            <Button variant={'secondary'}>Button 2</Button>
+          </CardFooter>
+        </Card>
       </main>
     </HydrateClient>
   );
